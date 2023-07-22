@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Best Training Center In Saharanpur</title>
+    <link rel="icon" href="Images/sb.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!----Font Awesome CDN---->
+
+    <link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" 
+      crossorigin="anonymous">
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+     
+<!----Bootstrap CSS CDN---->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!----Font Awesome CDN---->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-----Font----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    @media screen and (max-width:700px){
+    .modal-content1{
+       
+    
+       background: transparent;      
+    }
+
+
+}
+</style>
+</head>
+<body>
+<section class="d-flex align-item-center" id="hero">
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ml-auto">
+    <div class="container-fluid">
+    <a href="#" class="navbar-brand"><img src="Images/logo2.png"> SB INFOTECH PVT.LTD.</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navid">
+        <span class="navbar-toggler-icon"> </span>
+
+    </button>
+    <div class="collapse navbar-collapse" id="navid">
+    <ul class="navbar-nav text-center ml-auto">
+
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Service <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-menu bg-dark">
+          <li><a href="#" class="nav-link dropdown-item nav-link bg-dark">Digital Marketing</a></li>
+            <li><a href="All.html" class="nav-link dropdown-item nav-link bg-dark">Training / Internship</a></li>
+            <li><a href="#" class="nav-link dropdown-item nav-link bg-dark">Web Development</a></li>
+            <li><a href="#" class="nav-link dropdown-item nav-link bg-dark">Architects</a></li>
+            
+            <li><a href="#" class="nav-link dropdown-item nav-link bg-dark">CCTV Installation</a></li>
+            <li><a href="#" class="nav-link dropdown-item nav-link bg-dark">I Card Printing</a></li>
+            
+            
+
+            
+
+
+
+          </ul>
+
+        </li>
+        <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
+
+    </ul>
+     <div class="btn-open-modal"><i id="cer" data-toggle="tooltip" title="Certificate Varification" class="fa fa-certificate fa-2x text-light" style="margin-left:100px;"></i><p class="cer">Certificat Varification</p>      
+      
+      </div>
+    </div>
+    <div class="modal-container">
+      <div class="modal-inner">
+        <div class="btn-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+        <div class="modal-image">
+          <img src="images/1.jpg" alt="Modal Image" class="modal-img">
+        </div>
+        <div class="modal-content1" style="outline:none; border:none; height:70%; margin-left: 10px;">
+          <h4 class="heading">Certificate Varification</h4>
+          <p class="text-dark" style="font-size:20px; margin-left: 20px; margin-right:40px;">Enter Your Roll No. to verify your certificate</p>
+          <div class="input-container">
+            
+            <input type="number" name="rollno" placeholder="Your Roll Number">
+
+            <button class="btn" name="search" onclick="openPopup()">Submit</button>
+            
+             <div id="popup">
+    <div id="popup-content">
+          <div class="table">
+<table class="table table-bordered table-hover border-info table-responsive-sm">
+  <tr>
+    <th class="bg-dark text-white text-center" colspan="8">RESULT</th>
+  </tr>
+  <tr>
+    <th>Roll No</th>
+    <th>Name</th>
+    <th>FatherName</th>
+    <th>TrainingFrom</th>
+    <th>TrainingTo</th>
+    <th>Project</th>
+    <th>Course</th>
+    <th>Grade</th>
+  </tr>
+<!-- <tr>
+    <td>Science</td>
+    <td>Math</td>
+    <td>English</td>
+    <td>Hindi</td>
+    <td>Drawing</td>
+     <td>English</td>
+    <td>Hindi</td>
+    <td>Drawing</td>
+  </tr>
+ -->
+</table>
+</div>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+          </div>
+           </div>
+
+    
+ </div>
+ </div>
+ </nav>
+</div>
+</section>
+<div class="back_to_top">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <section class="course">
+         <h1 style="font-size: 40px">Learn JavaScript <span class="auto"></span> </h1>
+      
+       
+      
+      <div>
+           <div class="Data">
+            <img src="Images/js.jpg">
+           
+              </div> 
+            <p>JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity.
+
+</p>
+     
+        
+        </div>
+        <a href="contact.html">Contect Us</a>
+   
+        
+        </section>
+         
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+        
+        var typed = new Typed(".auto", { strings: [" With....!", " SB Infotech Pvt. Ltd."], 
+                                       
+            typeSpeed: 80,
+            backSpeed: 70,
+                loop: true
+                                        
+             })
+        </script>
+        <script type="text/javascript">
+    $(document).ready(function(){
+    
+    $('[data-toggle="tooltip"]').tooltip();
+
+    })
+    function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<section class="popup">
+<div class="container">
+    <div class="contact">
+    <a class="btn" data-target="#data" data-toggle="modal"><img data-toggle="tooltip" title="Contact Us" data-placement="left" src="Images/contact.png"></a>
+    <span>Contact Us</span>
+</div>
+        <div class="modal fade" id="data">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  
+                  <div class="modal-header ">
+                    <h3 class="text-primary">CONTACT US</h3>
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <i class="fa fa-user fa-2x text-primary"></i><label style="font-size: 20px; color: #333; font-weight: 600;">&ensp; Name:</label>
+                                <input type="text" name="user" class="form-control" placeholder="Enter Your Name">
+                                
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-envelope fa-2x text-primary"></i><label style="font-size: 20px; color: #333; font-weight: 600;">&ensp; Email:</label>
+                                <input type="Text" id="myInput" name="user" class="form-control" placeholder="Enter Your Email">
+                  
+
+                                
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-phone fa-2x text-primary"></i><label style="font-size: 20px; color: #333; font-weight: 600;">&ensp; Phone No: </label>
+                                <input type="email" name="user" class="form-control" placeholder="Enter Your Phone Number">
+                                
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-comment fa-2x text-primary"></i><label style="font-size: 20px; color: #333; font-weight: 600;">&ensp; Comment: </label>
+                                <textarea name="user" class="form-control" placeholder="Enter Your Message"></textarea>
+                                
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button class="btn btn-danger btn-lg" data-dismiss="modal" title="Signup Here">Send</button>
+                                
+                            </div>
+                                
+                        </form>
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    
+    </div>
+</div>
+</section>
+<section class="footer1">
+    <div class="container-fluid">
+        <div class="social">
+        <h4>Get connected with us on social networks:</h4>
+        <ul>
+        <li><a href=""><i class="fab fa-facebook fa-2x text-primary bg-light" style="padding: 5px 14px 5px 14px; border-radius: 100%;" ></i></a></li>
+        <li><a href=""><i class="fa fa-youtube fa-2x text-danger bg-light" style="padding: 5px 14px 5px 14px; border-radius: 100%;" ></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin fa-2x bg-light" style="padding: 5px 14px 5px 14px; border-radius: 100%;" ></i></a></li>
+        <li><a href=""><i class="fa fa-google fa-2x text-danger bg-light" style="padding: 5px 14px 5px 14px; border-radius: 100%;" ></i></a></li>
+        <li><a href=""><i class="fa fa-instagram fa-2x text-danger bg-light" style="padding: 5px 14px 5px 14px; border-radius: 100%;" ></i></a></li>
+    </ul>
+        </div>
+        <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto-3">
+           <h5 class="text-uppercase md-4 font-white-bold text-warning text-center">SB INFOTECH PVT LTD</h5><span class="under"></span>
+             <p>ShivkulBanwari Infotech Pvt Ltd is a Digital Marketing and Web Development Company with highly qualified professionals. Our Company also offers internships and training in all technical areas.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+               <h5 class="text-uppercase md-4 font-white-bold text-warning">Product</h5><span class="under1"></span>
+               <p><a href="#" class="text-white" style="text-decoration: none;">Web Development</a></p>
+               <p><a href="#" class="text-white" style="text-decoration: none;">Digital Marketing</a></p>
+               <p><a href="#" class="text-white" style="text-decoration: none;">Training/Internship</a></p>
+               <p><a href="#" class="text-white" style="text-decoration: none;">CCTV Installation</a></p>
+
+        </div>
+         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+               <h5 class="text-uppercase md-4 font-white-bold text-warning">USEFUL LINKS</h5><span class="under2"></span>
+               <p><a href="#" class="text-white" style="text-decoration: none;">Architects</a></p>
+               <p><a href="#" class="text-white" style="text-decoration: none;">Courses</a></p>
+               <p><a href="#" class="text-white" style="text-decoration: none;">I Card Printing</a></p>
+               <p><a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+
+        </div>
+       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+              <h5 class="text-uppercase md-4 font-white-bold text-warning">CONTACT</h5><span class="under3"></span>
+            <p> <i class="fa fa-home">  </i> &nbsp;713,SB Infotech Pvt Ltd,New Awas Vikas,<br>Near Jain Mandir,JV Jain College Delhi Road,Saharanpur(247001)</p> 
+               <p><i class="fa fa-envelope "></i> &nbsp;support@sbinfo.in</p>
+               <p><i class="fa fa-phone">&emsp;</i> +91 7252990102</p>
+              
+
+        </div>
+       </div>
+   <hr class="md-4">
+   <div class="row align-item-center" id="rows">
+    <div class="col-md-7 col-lg-8">
+  <p>Copyright @2023 All Rights Reserved by: <a href="#" style="text-decoration: none;">
+    <strong class="text-warning">SB Infotech Pvt. Ltd.</strong></a></p>
+        </div>
+          </div>
+    </div>
+       <!--  <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline" style="display: inline-flex;">
+            <li><a href="" class="btn-floating btn-sm text-white" style="font-size:25px;"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="" class="btn-floating btn-sm text-white" style="font-size:25px;"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="" class="btn-floating btn-sm text-white" style="font-size:25px;"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="" class="btn-floating btn-sm text-white" style="font-size:25px;"><i class="fab fa-google"></i></a></li>
+            <li><a href="" class="btn-floating btn-sm text-white" style="font-size:25px;"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+            </div>
+        </div>
+      </div>
+ -->
+    </footer>
+</section>
+    </body>
+</html>
